@@ -1,0 +1,16 @@
+.container{
+  margin-left: 70px;
+}
+
+.user__nick .premium {
+  animation: goldBlink 1s infinite; /* 애니메이션 이름, 지속시간, 반복 설정 */
+}
+
+@keyframes goldBlink { /*일딘 CSS 애니메이션 위해 key 넣음*/
+  0% { color: black; } 
+  50% { color: #ffdd40; } 
+  100% { color: black; } 
+}
+body {
+  margin: 0;
+}

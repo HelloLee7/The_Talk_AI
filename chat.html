@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>코코넛톡 - 채팅</title>
+  <link href="common.css" rel="stylesheet">
+  <link href="chat.css" rel="stylesheet">
+  <link href="chats.css" rel="stylesheet">
+  <link href="userlist.css" rel="stylesheet">
+  <link href="./img/coconut.png" rel="icon">
+</head>
+<body>
+  <div class="container">
+    <div class="chat-screen">
+      <div class="chat-screen__bar">
+        <div class="user chat-user">
+          <div class="user__column">
+            <div class="user__pic"></div>
+          </div>
+          <div class="user__column">
+            <p class="user__nick"><span class="premium">유노 코딩 프리미엄</span></p>
+            <p class="user__message">
+              <i class="fas fa-user"></i> 2
+            </p>
+          </div>
+        </div>
+      </div>
+      <ul class="chat-screen__comments">
+        <li class="comment">프리미엄 구독자 전용</li>
+        <li class="comment">코딩 수업 목차</li>
+      </ul>
+    </div>
+    <form class="chat-form" onsubmit="return false;">
+      <div class="chat-form__plugin">
+        <i class="far fa-smile chat-form__icon"></i>
+        <i class="fas fa-paperclip chat-form__icon"></i>
+        <i class="far fa-calendar-check chat-form__icon"></i>
+      </div>  
+      <div class="chat-form__field">
+        <textarea class="chat-form__msg"></textarea>
+        <input class="chat-form__bt" type="submit" value="전송">
+      </div>
+    </form>
+
+  </div>
+  <script src="https://kit.fontawesome.com/c8e2b99a17.js" crossorigin="anonymous"></script>
+</body>
+</html>

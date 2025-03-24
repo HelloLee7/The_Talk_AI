@@ -1,0 +1,70 @@
+.user-list a{
+  text-decoration: none;
+  color: initial;
+}
+.user{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  padding: 16px;
+}
+.user:hover{
+  background-color: #cfcdeb;
+}
+.user__pic:not(.my-profile .user__pic){
+  width: 50px; 
+  height: 50px;
+  margin-right: 10px;
+  border-radius: 18px;
+  background-color: #160d68;
+}
+.user__nick{
+  margin: 5px;
+  font-size: 0.9em;
+}
+.user__state, .user__message{
+  overflow:hidden;
+  width: 50vw;
+  margin: 5px;
+  font-size: 0.8em;
+  color: #aeaeae;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+}
+.user__time{  
+  position: absolute;
+  top: 10px;
+  right: 16px;
+  font-size: 0.8em;
+  color: #aeaeae;
+}
+
+.user__nick__god {
+  margin: 5px;
+  font-size: 1.2em;
+  animation: goldBlink 1s infinite; /* 애니메이션 이름, 지속시간, 반복 설정 */
+}
+
+@keyframes goldBlink { /*일딘 CSS 애니메이션 위해 key 넣음*/
+  0% { color: black; } 
+  50% { color: #001aff; } 
+  100% { color: black; } 
+}
+
+.the_best {
+  color: red;
+}
+
+.user__nick .premium2 {
+  animation: goldBlink 1s infinite; /* 애니메이션 이름, 지속시간, 반복 설정 */
+}
+
+@keyframes goldBlink { /*일딘 CSS 애니메이션 위해 key 넣음*/
+  0% { color: black; } 
+  50% { color: #ffdd40; } 
+  100% { color: black; } 
+}
+body {
+  margin: 0;
+}
